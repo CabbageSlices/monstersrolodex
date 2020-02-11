@@ -4,9 +4,10 @@ import {Card} from './card.jsx'
 const cardListStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'flex-start',
-    alignContent: 'space-between'
+    alignContent: 'space-between',
+    alignSelf: 'center'
 };
 
 const cardRowStyle = {

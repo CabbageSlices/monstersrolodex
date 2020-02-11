@@ -4,6 +4,19 @@ import { SearchBox } from './components/search-box.jsx'
 import logo from './logo.svg';
 import './App.css';
 
+const appStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center'
+};
+
+const h1Style = {
+  fontFamily: 'Bigelow Rules',
+  fontSize: "72px",
+  color: "#0ccac4"
+}
+
 class App extends Component {
 
   constructor() {
@@ -29,7 +42,8 @@ class App extends Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchString.toLowerCase()));
 
     return (
-      <div className="App">
+      <div className="App" style={appStyle}>
+        <h1 style={h1Style}>Monsters Rolodex</h1>
         <SearchBox
           placeholder='search monsters'
           onChange={

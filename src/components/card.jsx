@@ -4,13 +4,14 @@ const cardStyle = {
     border: "1px solid black",
     marginRight: "-1px",
     height: "350px",
-    maxWidth: "300px",
+    maxWidth: "250px",
     minWidth: "200px",
     padding: "20px",
     verticalAlign: "middle",
     display: "flex",
     flexDirection: 'column',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
+    boxSizing: 'border-box'
 };
 
 export const Card = props => (
